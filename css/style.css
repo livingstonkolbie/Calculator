@@ -19,14 +19,14 @@
     background-color: grey;  
 }
 
-.oppCol {
+.opp {
     margin: 1%;
     border: 2px solid white;
     background-color: orange;
     color: white;
 }
 
-.numCol {
+.num {
     margin: 1%;
     border: 2px solid white;
     background-color: darkgrey;

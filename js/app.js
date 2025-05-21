@@ -1,20 +1,28 @@
 
-let zero = document.querySelector(".zero");
-zero.addEventListener('click', () => {
-    let calcText = document.querySelector(".calcText");
-    calcText.innerHTML = "0";
-});
 
-let numButtons = document.querySelectorAll(".numCol");
-console.log(numButtons);
-
-let operatorButtons = document.querySelectorAll(".oppCol");
-console.log(operatorButtons);
+let numButtons = document.querySelectorAll(".num");
+let oppButtons = document.querySelectorAll(".opp");
 
 
-//BELOW - scroll throught the numbers and make it so that when you click them they display on the screen
 for (let i = 0; i < numButtons.length; i++) {
+
     function numToDisplay() {
-        numButtons[i].innerHTML = i;
+        let chooseNumber = document.querySelectorAll(".num");
+        chooseNumber[i].addEventListener('click', () => {
+            let calcText = document.querySelector(".calcText");
+            calcText.innerHTML = chooseNumber[i].innerHTML;
+        });
     }
+
+    function oppToDisplay() {
+        let chooseOpp = document.querySelectorAll(".opp");
+        chooseOpp[i].addEventListener('click', () => {
+            let calcText = document.querySelector(".calcText");
+            calcText.innerHTML = chooseOpp[i].innerHTML;
+        })
+    }
+
+
+    oppToDisplay();
+    numToDisplay();
 }
