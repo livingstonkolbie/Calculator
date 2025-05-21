@@ -1,0 +1,47 @@
+
+
+.calculatorBody {
+    border: 3px solid grey;
+}
+
+.displayRow {
+    background-color: black;
+    height: 100px;
+    /* color: white; */
+}
+
+.calcText {
+    float: inline-end;
+    color: white;
+}
+
+.operationsRow {
+    background-color: grey;  
+}
+
+.oppCol {
+    margin: 1%;
+    border: 2px solid white;
+    background-color: orange;
+    color: white;
+}
+
+.numCol {
+    margin: 1%;
+    border: 2px solid white;
+    background-color: darkgrey;
+    color: white;
+}
+
+.equal {
+    background-color: green;
+}
+
+.clear {
+    background-color: red;
+}
+
+.blank {
+    border: grey;
+    background-color: grey;
+}
