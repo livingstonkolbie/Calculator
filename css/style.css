@@ -1,7 +1,10 @@
-
+body {
+    padding: 0rem 6rem;
+}
 
 .calculatorBody {
     border: 3px solid grey;
+    border-radius: 3px;
 }
 
 .displayRow {
@@ -22,6 +25,7 @@
 .opp {
     margin: 1%;
     border: 2px solid white;
+    border-radius: 3px;
     background-color: orange;
     color: white;
 }
@@ -29,6 +33,7 @@
 .num {
     margin: 1%;
     border: 2px solid white;
+    border-radius: 3px;
     background-color: darkgrey;
     color: white;
 }
@@ -43,5 +48,6 @@
 
 .blank {
     border: grey;
+    border-radius: 3px;
     background-color: grey;
 }
