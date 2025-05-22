@@ -1,4 +1,4 @@
-
+//1st - grab everything...
 // Get the display
 let display = document.querySelector('.calcText');
 let currentNumber = '';
@@ -18,7 +18,7 @@ let nineBtn = document.querySelector('.nine');
 let zeroBtn = document.querySelector('.zero');
 let pointBtn = document.querySelector('.point');
 
-// Get the opperations
+// Get the opperators
 let addBtn = document.querySelector('.add');
 let minusBtn = document.querySelector('.minus');
 let multiplyBtn = document.querySelector('.multiply');
@@ -112,7 +112,7 @@ divideBtn.addEventListener('click', function() {
 });
 
 equalBtn.addEventListener('click', function() {
-    var result = 0;
+    let result = 0;
     
     if (operator == '+') {
         result = Number(previousNumber) + Number(currentNumber);
@@ -128,9 +128,6 @@ equalBtn.addEventListener('click', function() {
     }
     
     display.textContent = result;
-    currentNumber = result;
-    previousNumber = '';
-    operator = '';
 });
 
 clearBtn.addEventListener('click', function() {
